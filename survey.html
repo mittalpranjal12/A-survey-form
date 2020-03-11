@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="F:\visual\survey.css" media="screen"/>
+    <title>A Survey Page</title>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <div class="container">
+            <header class="head">
+                <p id="description">Welcome to my Survey Form </p>
+                <p id="title">Thank You for taking the time to fill this form</p>
+            </header>
+        </div>       
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label> 
+                <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+                />
+            </div><br>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+                />
+            </div><br>
+            <div class="form-group">
+                <label id="number-label" for="number"
+                >Age<span class="clue">(optional)</span></label
+                >
+                <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+                />
+            </div><br>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    What would you like to work on?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label><input
+                    name="prefer"
+                    value="c-language"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />C-language
+                </label>
+                <label><input
+                    name="prefer"
+                    value="c++-language"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />C++-language
+                </label>
+                <label><input
+                    name="prefer"
+                    value="python"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Python
+                </label>
+                <label><input
+                    name="prefer"
+                    value="Web-Development"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Web-Development
+                </label>
+                <label><input
+                    name="prefer"
+                    value="Machine-Learning"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Machine-Learning
+                </label>
+                <label><input
+                    name="prefer"
+                    value="Artificial-Intelligence"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Artificial-Intelligence
+                </label>
+                <label><input
+                    name="prefer"
+                    value="Robotics"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Robotics
+                </label>
+                <label><input
+                    name="prefer"
+                    value="Java"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Java
+                </label>
+                <label><input
+                    name="prefer"
+                    value="Others"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Others
+                </label>
+                <div class="form-group">
+                    <p>Please mention the other courses you would like to work on</p>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your suggestions here..."
+                    ></textarea>
+                </div><br>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </form>
+                
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
